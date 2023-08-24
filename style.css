@@ -10,9 +10,12 @@
   background-color: var(--dark);
   box-sizing: border-box;
 }
+
+button {
+  border: none;
+}
 .timer-container {
   font-family: "Roboto", sans-serif;
-
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -81,4 +84,46 @@
   background: var(--point);
   z-index: 2;
   transform-origin: bottom;
+}
+
+.btn-container {
+  width: 380px;
+  margin: 80px auto 0;
+  display: flex;
+  gap: 16px;
+}
+
+.control-btn {
+  width: 130px;
+  margin: 30px auto 0;
+}
+.icon-btn {
+  border: none;
+  padding: 16px;
+  border: 1px solid var(--light);
+  border-radius: 50%;
+  color: var(--light);
+  cursor: pointer;
+}
+.icon-btn:hover,
+.icon-btn.active {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.btn {
+  background: transparent;
+  color: var(--light);
+  padding: 16px;
+
+  border: 1px solid var(--light);
+  border-radius: 15px;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+.btn:hover,
+.btn.active {
+  background-color: var(--light);
+  color: var(--dark);
 }
